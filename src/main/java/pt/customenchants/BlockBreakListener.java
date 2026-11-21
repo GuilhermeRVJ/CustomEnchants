@@ -77,8 +77,11 @@ public class BlockBreakListener implements Listener {
         targets.add(block);
         boolean replant = false;
 
-        Integer autoPlant = enchants.get(CustomEnchant.AUTOPLANT);
-        if (autoPlant != null && BlockUtil.isCrop(type) && BlockUtil.isMature(block)) {
+        if (autoPlant != null && BlockUtil.isCrop(type)) {
+            if (!BlockUtil.isMature(block)) {
+                event.setCancelled(true); // protege culturas que ainda nao estao 100% crescidas
+                return;
+            }
             replant = true; // so replanta o proprio bloco partido
         }
 
