@@ -15,8 +15,8 @@ public enum CustomEnchant {
             "Drops e XP vao direto para o inventario.",
             ToolType.PICKAXE, ToolType.AXE, ToolType.SHOVEL, ToolType.HOE, ToolType.SWORD),
 
-    AUTOPLANT("autoplant", "Plantacao Automatica", 3,
-            "Ao colher uma cultura madura, replanta sozinha. Nivel II+ colhe em area.",
+    AUTOPLANT("autoplant", "AutoPlant", 1,
+            "Ao partires uma cultura madura, ela e replantada automaticamente.",
             ToolType.HOE),
 
     SMELTING("smelting", "Fundicao", 1,
