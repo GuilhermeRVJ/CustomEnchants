@@ -1,0 +1,35 @@
+# Configuracao do CustomEnchants
+
+# Lenhador: maximo de blocos de tronco partidos = nivel * blocks-per-level
+timber:
+  blocks-per-level: 40
+  require-sneak: false   # true = so funciona quando o jogador esta agachado
+
+# Mineiro de Veios: maximo de blocos de minerio = nivel * blocks-per-level
+vein-miner:
+  blocks-per-level: 8
+  require-sneak: false
+
+# Vampirismo: percentagem do dano causado que e convertida em vida, por nivel
+lifesteal:
+  percent-per-level: 10
+
+# Experiencia: bonus de XP por nivel (0.5 = +50% por nivel)
+experience:
+  bonus-per-level: 0.5
+
+prefix: "&8[&bCE&8] &7"
+messages:
+  no-permission: "&cNao tens permissao para isso."
+  players-only: "&cApenas jogadores podem usar este comando."
+  hold-item: "&cSegura um item na mao."
+  unknown-enchant: "&cEncantamento desconhecido. Usa &f/ce list&c."
+  not-applicable: "&cO encantamento &f{enchant} &cnao pode ser aplicado a este item."
+  applied: "&aAplicado &f{enchant} {level}&a ao item."
+  removed: "&aRemovido &f{enchant}&a do item."
+  not-present: "&cEsse item nao tem &f{enchant}&c."
+  book-given: "&aRecebeste um livro de &f{enchant} {level}&a."
+  book-applied: "&aAplicaste &f{enchant} {level}&a ao teu item!"
+  book-useless: "&cO item ja tem {enchant} de nivel igual ou superior."
+  inventory-full: "&eInventario cheio! Alguns itens cairam ao chao."
+  reloaded: "&aConfiguracao recarregada."

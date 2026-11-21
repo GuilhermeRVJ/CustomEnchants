@@ -1,0 +1,14 @@
+name: CustomEnchants
+main: pt.customenchants.CustomEnchantsPlugin
+version: ${project.version}
+description: Encantamentos personalizados (Telepatia, Plantacao Automatica, Fundicao e mais) para 1.8.8
+author: CustomEnchants
+commands:
+  ce:
+    description: Comando principal dos encantamentos personalizados
+    aliases: [customenchants, encantamentos]
+    usage: /ce <list|enchant|remove|book|reload>
+permissions:
+  customenchants.admin:
+    description: Permite usar os comandos de administracao
+    default: op
