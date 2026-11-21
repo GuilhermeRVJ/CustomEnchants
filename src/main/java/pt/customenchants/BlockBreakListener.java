@@ -79,19 +79,7 @@ public class BlockBreakListener implements Listener {
 
         Integer autoPlant = enchants.get(CustomEnchant.AUTOPLANT);
         if (autoPlant != null && BlockUtil.isCrop(type) && BlockUtil.isMature(block)) {
-            replant = true;
-            int radius = autoPlant - 1;
-            for (int dx = -radius; dx <= radius; dx++) {
-                for (int dz = -radius; dz <= radius; dz++) {
-                    if (dx == 0 && dz == 0) {
-                        continue;
-                    }
-                    Block other = block.getRelative(dx, 0, dz);
-                    if (BlockUtil.isCrop(other.getType()) && BlockUtil.isMature(other)) {
-                        targets.add(other);
-                    }
-                }
-            }
+            replant = true; // so replanta o proprio bloco partido
         }
 
         Integer timber = enchants.get(CustomEnchant.TIMBER);
